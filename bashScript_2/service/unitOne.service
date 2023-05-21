@@ -1,0 +1,11 @@
+[Unit]
+Description=saby-unitOne
+
+[Service]
+
+ExecStart=/opt/misc/saby-unitOne/saby-daemon.sh
+ExecStop=/opt/misc/saby-unitOne/saby-daemon.sh
+WorkingDirectory=/opt/misc/saby-unitOne
+
+[Install]
+WantedBy=multi-user.target
