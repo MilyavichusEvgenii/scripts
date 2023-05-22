@@ -39,7 +39,6 @@ do
         echo $y >> temp2.txt
     fi
 done < $file1
-# cat '## 1, нельзя разрешить dns имя ##' prohibition.txt '## 2, имя разрешилось, но сервер не пингуется ##' temp2.txt '## 3, имя разрешилось, сервер пингуется ##' temp1.txt > tableIp.txt
 echo "## 1, нельзя разрешить dns имя ##" > tableIp.txt
 cat prohibition.txt >> tableIp.txt
 echo "## 2, имя разрешилось, но сервер не пингуется ##" >> tableIp.txt
